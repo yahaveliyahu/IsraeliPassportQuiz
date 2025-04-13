@@ -18,7 +18,23 @@ An Android quiz app built with Kotlin that shows a country flag and asks:
 ---
 
 ### 📸 Screenshots:
-*(Coming soon)*
+## Screenshots
+
+### Example Question
+![Example Question](https://raw.githubusercontent.com/yahaveliyahu/IsraeliPassportQuiz/master/Example%20Question.jpg)
+
+### Right Answer
+![Right Answer](https://raw.githubusercontent.com/yahaveliyahu/IsraeliPassportQuiz/master/Right%20Answer.jpg)
+
+### Wrong Answer
+![Wrong Answer](https://raw.githubusercontent.com/yahaveliyahu/IsraeliPassportQuiz/master/Wrong%20Answer.jpg)
+
+### Win Game Screen
+![Win Game Screen](https://raw.githubusercontent.com/yahaveliyahu/IsraeliPassportQuiz/master/Win%20Game%20Screen.jpg)
+
+### Game Over Screen
+![Game Over Screen](https://raw.githubusercontent.com/yahaveliyahu/IsraeliPassportQuiz/master/Game%20Over%20Screen.jpg)
+
 
 ---
 
