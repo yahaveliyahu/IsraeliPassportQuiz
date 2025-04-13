@@ -1,4 +1,4 @@
-# Israeli Passport Quiz 🇮🇱🌍
+# Israeli Passport Quiz🌍
 
 An Android quiz app built with Kotlin that shows a country flag and asks:
 
