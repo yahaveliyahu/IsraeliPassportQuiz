@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_color"
+    >
+
+
+<!--הניקוד למעלה-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold"
+       />
+
+<!--linear layout compat עוטף את שלושת הלבבות-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/heart_layout_width"
+        android:layout_height="@dimen/heart_dimens"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heart_dimens"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heart_dimens"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/heart_margins"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heart_dimens"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--המשפט שמעל שם הדגל-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which country can I enter with an Israeli passport?"
+        android:layout_above="@id/main_LBL_countryName"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <!--הדגל-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_flag"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_launcher_background"
+         />
+<!--הכתוב שמעל הדגל-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Country Name"
+        android:layout_above="@id/main_IMG_flag"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/default_margin"
+        />
+
+<!--linear layout compat עוטף את שתי הכפתורים-->
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/default_margin"
+    >
+
+<!--כפתור ראשון-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:text="@string/yes"
+        />
+<!--כדי לרווח בין הכפתורים-->
+<View
+    android:layout_width="@dimen/default_margin"
+    android:layout_height="0dp" />
+<!--כפתור שני-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="1"
+        android:text="@string/no"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
